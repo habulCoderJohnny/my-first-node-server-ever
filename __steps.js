@@ -3,9 +3,20 @@ BASIC SERVER SETUP
 1.create a folder (menually or mkdir)
 2.open command line to that folder
 3.npm init -y
-4.for Express
-5.npm install express
+--for Express--
+4.npm i express/cors/mongobd
+5.include in package.json
+  "scripts": {
+  "start": "node index.js",
+  "start-dev": "nodemon index.js"
+}
 6.CREATE index.js file
+OR/ 
+go to express Documentory: https://expressjs.com/en/starter/installing.html
+In index.js file:
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 5000;
 =========== 0  =========
 
 FOR EXPRESS/NODE SERVER
@@ -25,10 +36,5 @@ https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 =========== 0  =========
 
 ---Nodemon--- (for live)
-1.nodemon Installation: npm install -g nodemon 
-2.include in package.json
-  "scripts": {
-  "start": "node index.js",
-  "start-dev": "nodemon index.js"
-}
+nodemon Installation: npm install -g nodemon (onetime)
 */
